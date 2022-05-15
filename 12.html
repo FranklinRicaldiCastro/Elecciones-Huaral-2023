@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Huaral Voto Informado</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script>
+
+		var ALERT_TITLE = "EL Plan De Gobierno";
+		var ALERT_BUTTON_TEXT = "Ok";
+
+		if(document.getElementById) {
+		window.alert = function(txt) {
+			createCustomAlert(txt);
+		}
+		}
+
+		function createCustomAlert(txt) {
+		d = document;
+
+		if(d.getElementById("modalContainer")) return;
+
+		mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+		mObj.id = "modalContainer";
+		mObj.style.height = d.documentElement.scrollHeight + "px";
+
+		alertObj = mObj.appendChild(d.createElement("div"));
+		alertObj.id = "alertBox";
+		if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+		alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+		alertObj.style.visiblity="visible";
+
+		h1 = alertObj.appendChild(d.createElement("h1"));
+		h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+		msg = alertObj.appendChild(d.createElement("p"));
+		//msg.appendChild(d.createTextNode(txt));
+		msg.innerHTML = txt;
+
+		btn = alertObj.appendChild(d.createElement("a"));
+		btn.id = "closeBtn";
+		btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+		btn.href = "#";
+		btn.focus();
+		btn.onclick = function() { removeCustomAlert();return false; }
+
+		alertObj.style.display = "block";
+
+		}
+
+		function removeCustomAlert() {
+		document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+		}
+		function ful(){
+		alert('NO SE ENCUENTRA, En cuanto lo publique se subira');
+		}
+	</script>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar" style="background-color:#2c2c2c">
+				<div class="inner">
+					<nav style="background-color:#2c2c2c">
+						<ul>
+							<center>
+								<li><a href="index.html#intro" style="font-size: 15px;">Bienvenidos</a></li>
+								<li><a href="index.html#uno" style="font-size: 12px">Accion Popular</a></li>
+								<li><a href="index.html#dos" style="font-size: 12px">Podemos Perú</a></li>
+								<li><a href="index.html#tres" style="font-size: 12px">Fe en el Perú</a></li>
+								<li><a href="index.html#cuatro" style="font-size: 12px">Patriotico del Perú</a></li>
+								<li><a href="index.html#cinco" style="font-size: 12px">Perú Libre</a></li>
+								<li><a href="index.html#seis" style="font-size: 12px">Somos Perú</a></li>
+								<li><a href="index.html#siete" style="font-size: 12px">Movimiento Regional Unidad Civica</a></li>
+								<li><a href="index.html#ocho" style="font-size: 12px">Integración Social</a></li>
+								<li><a href="index.html#nueve" style="font-size: 12px">Alianza Para El Progreso</a></li>
+								<li><a href="index.html#dies" style="font-size: 12px">Juntos Por El Perú</a></li>
+								<li><a href="index.html#once" style="font-size: 12px">Concertación para el Desarrollo Regional - Lima</a></li>
+								<li><a href="index.html#doce" style="font-size: 12px; color: #FFBE0B">Renovación Popular</a></li>
+								<li><a href="index.html#trece" style="font-size: 12px">Democrata Verde</a></li>
+								<li><a href="index.html#catorce" style="font-size: 12px">Patria Joven</a></li>
+								<li><a href="index.html#quince" style="font-size: 12px">Fuerza Popular</a></li>
+							</center>
+                        </ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <section id="two" class="wrapper style3 fade-up" style="background-color: #494947">
+					<div class="inner">
+						<h2 style="background-color: #560bad; text-align: center; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px">RENOVACION POPULAR</h2>
+						<div class="features" style="background-color: #560bad">
+							<section>
+								<center>
+									<h3>Tipo de Eleccion</h3>
+								</center><br>
+								<center>
+									<img src="images/103.png" width=250px height=250px alt=""><hr>
+								</center>
+								<center>
+									<p>Candidatos Obligatorios: 12 </br>
+										Candidatos para reemplazo: 1
+										<hr>
+										<div class="actions">
+											<p><a href="https://www.facebook.com/arturosanchez1012" target=”_blank” class="button">REDES SOCIALES</a></p>
+										</div>
+										<input type="button" value = "PLAN DE GOBIERNO" onclick="alert('NO SE ENCUENTRA, En cuanto lo publique se subira');" />
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<h3>Candidato a Alcalde</h3>
+									<p>LUIS ARTURO SANCHEZ VALENCIA.</p>
+								</center>
+								<center><img src="images/descargar (164).jpg" width=250px height=350px alt=""><hr>
+								</center>
+								<center>
+									<p>GERENTE EN: ARTURO SANCHEZ REPRESENTACIONES S.A</p><hr>
+									<p> CARRERA: NO SE SABE</p><hr>
+									<p> DNI: 15959430 </br>
+										Edad: 59 </br>
+									</p>
+								</center>
+							</section>
+						</div>
+                        <p style="background-color: #570bada5; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS A REGIDORES.</p>
+                        <div class="features" class="features" style="background-color: #570bada5">
+                            <section>
+                                <center>
+									<p>OLGA SILVIA YOUNG SALGUERO</p>
+									<img src="images/descargar (165).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 42741025 </br>
+										Sexo: FEMENINO</br>
+										Edad: 37
+									</p>
+								</center>
+                            </section>
+                            <section>
+                                <center>
+									<p>EINORD BARRON EBISUI</p>
+									<img src="images/descargar (166).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 08640481 </br>
+										Sexo: MASCULINO</br>
+										Edad: 60
+									</p>
+								</center>
+                            </section>
+                            <section>
+                                <center>
+									<p>GERALDINE RUBY CUADROS ARGÜELLES</p>
+									<img src="images/descargar (167).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 71818496 </br>
+										Sexo: FEMENINO</br>
+										Edad: 26
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>RENZO ANTHONY SALAZAR CARBAJAL</p>
+									<img src="images/descargar (168).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 45286743 </br>
+										Sexo: MASCULINO</br>
+										Edad: 33
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>ADAMARI ANAHI ROQUE AQUIJE</p>
+									<img src="images/descargar (169).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 75932125 </br>
+										Sexo: FEMENINO</br>
+										Edad: 23
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JUAN CARLOS OCHOA RIMACHE</p>
+									<img src="images/descargar (170).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 16011297 </br>
+										Sexo: MASCULINO </br>
+										Edad: 48
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JULISSA FIORELA MORENO BALABARCA</p>
+									<img src="images/descargar (171).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 75119169 </br>
+										Sexo: FEMENINO </br>
+										Edad: 21
+									</p>
+								</center>
+							</section>
+                            <section>
+								<center>
+									<p>JUAN GERMAN GARAY APARICIO</p>
+									<img src="images/descargar (172).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 43783239 </br>
+										Sexo: MASCULINO</br>
+										Edad: 36
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>DORIS ISABEL CARRERA LORES</p>
+									<img src="images/descargar (173).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 08099285 </br>
+										Sexo: FEMENINO	</br>
+										Edad: 63
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>WIDMER PADILLA AGUEDO</p>
+									<img src="images/descargar (174).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 45646426 </br>
+										Sexo: MASCULINO</br>
+										Edad: 33
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>KEYLA BETHEL NOEMI CARRILLO ESPINOZA</p>
+									<img src="images/descargar (175).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 76621919 </br>
+										Sexo: FEMENINO </br>
+										Edad: 26
+									</p>
+								</center>
+							</section>
+							<section style="background-color: #494947"></section>
+						</div>
+						<p style="background-color: #570bad47; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS PARA EVENTUAL REEMPLAZO</p>
+						<div class="features" style="background-color: #570bad47">
+							<section>
+								<center>
+									<p>ROYFER ALMEDO ORIA PADILLA</p>
+									<img src="images/descargar (176).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 15943635 </br>
+										Sexo: MASCULINO </br>
+										Edad: 60
+									</p>
+								</center>
+							</section>
+							<section style="background-color: #494947"></section>
+						</div>
+					</div>
+                </section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

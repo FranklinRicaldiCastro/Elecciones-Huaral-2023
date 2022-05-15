@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Huaral Voto Informado</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script>
+
+		var ALERT_TITLE = "EL Plan De Gobierno";
+		var ALERT_BUTTON_TEXT = "Ok";
+
+		if(document.getElementById) {
+		window.alert = function(txt) {
+			createCustomAlert(txt);
+		}
+		}
+
+		function createCustomAlert(txt) {
+		d = document;
+
+		if(d.getElementById("modalContainer")) return;
+
+		mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+		mObj.id = "modalContainer";
+		mObj.style.height = d.documentElement.scrollHeight + "px";
+
+		alertObj = mObj.appendChild(d.createElement("div"));
+		alertObj.id = "alertBox";
+		if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+		alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+		alertObj.style.visiblity="visible";
+
+		h1 = alertObj.appendChild(d.createElement("h1"));
+		h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+		msg = alertObj.appendChild(d.createElement("p"));
+		//msg.appendChild(d.createTextNode(txt));
+		msg.innerHTML = txt;
+
+		btn = alertObj.appendChild(d.createElement("a"));
+		btn.id = "closeBtn";
+		btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+		btn.href = "#";
+		btn.focus();
+		btn.onclick = function() { removeCustomAlert();return false; }
+
+		alertObj.style.display = "block";
+
+		}
+
+		function removeCustomAlert() {
+		document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+		}
+		function ful(){
+		alert('NO SE ENCUENTRA, En cuanto lo publique se subira');
+		}
+	</script>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+		<section id="sidebar" style="background-color:#2c2c2c">
+			<div class="inner">
+				<nav style="background-color:#2c2c2c">
+					<ul>
+						<center>
+							<li><a href="index.html#intro" style="font-size: 15px;">Bienvenidos</a></li>
+							<li><a href="index.html#uno" style="font-size: 12px">Accion Popular</a></li>
+							<li><a href="index.html#dos" style="font-size: 12px">Podemos Perú</a></li>
+							<li><a href="index.html#tres" style="font-size: 12px">Fe en el Perú</a></li>
+							<li><a href="index.html#cuatro" style="font-size: 12px">Patriotico del Perú</a></li>
+							<li><a href="index.html#cinco" style="font-size: 12px">Perú Libre</a></li>
+							<li><a href="index.html#seis" style="font-size: 12px">Somos Perú</a></li>
+							<li><a href="index.html#siete" style="font-size: 12px">Movimiento Regional Unidad Civica</a></li>
+							<li><a href="index.html#ocho" style="font-size: 12px">Integración Social</a></li>
+							<li><a href="index.html#nueve" style="font-size: 12px">Alianza Para El Progreso</a></li>
+							<li><a href="index.html#dies" style="font-size: 12px">Juntos Por El Perú</a></li>
+							<li><a href="index.html#once" style="font-size: 12px; color:#FFBE0B">Concertación para el Desarrollo Regional - Lima</a></li>
+							<li><a href="index.html#doce" style="font-size: 12px">Renovación Popular</a></li>
+							<li><a href="index.html#trece" style="font-size: 12px">Democrata Verde</a></li>
+							<li><a href="index.html#catorce" style="font-size: 12px">Patria Joven</a></li>
+							<li><a href="index.html#quince" style="font-size: 12px">Fuerza Popular</a></li>
+						</center>
+                    </ul>
+				</nav>
+			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+            <section id="two" class="wrapper style3 fade-up" style="background-color:#494947">
+				<div class="inner">
+					<h2 style="background-color: #480ca8; text-align: center; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px">CONCERTACION PARA EL DESARROLLO REGIONAL - LIMA</h2>
+					<div class="features" style="background-color:#480ca8">
+						<section>
+                            <center>
+								<h3>Tipo de Eleccion</h3>
+							</center><br>
+                            <center>
+                                <img src="images/102.png" width=250px height=250px alt=""><hr>
+                            </center>
+                            <center>
+								<p>Candidatos Obligatorios: 12 </br>
+									Candidatos para reemplazo: 4
+									<hr>
+									<div class="actions">
+										<p><a href="https://www.facebook.com/edithgiovanna.felixmarcos" target=”_blank” class="button">REDES SOCIALES</a></p>
+									</div>
+									<input type="button" value = "PLAN DE GOBIERNO" onclick="alert('NO SE ENCUENTRA, En cuanto lo publique se subira');" />
+								</p>
+							</center>
+                        </section>
+                        <section>
+                            <center>
+								<h3>Candidato a Alcalde</h3>
+								<p>EDITH GIOVANNA FELIX MARCOS.</p>
+							</center>
+                            <center><img src="images/descargar (148).jpg" width=250px height=350px alt=""><hr>
+                            </center>
+                            <center>
+								<p>ALCALDESA DE VEINTICIETE DE NOVIEMBRE 2019 - 2022</p><hr>
+								<p>CARRERA: NO SE SABE</p><hr>
+									<p> DNI: 16012063 </br>
+									Edad: 45 </br>
+								</p>
+							</center>
+                        </section>
+					</div>
+                    <p style="background-color: #480ca8ae; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS A REGIDORES.</p>
+                    <div class="features" style="background-color:#480ca8ae">
+                        <section>
+                            <center>
+								<p>JEAN MARCO REQUENA ALVARADO</p>
+								<img src="images/descargar (149).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 46835092 </br>
+									Sexo: MASCULINO </br>
+									Edad: 30
+								</p>
+							</center>
+                        </section>
+                        <section>
+                            <center>
+								<p>SHEILA STEPHANIE PAULET BENAVIDES</p>
+								<img src="images/descargar (150).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 46538394 </br>
+									Sexo: FEMENINO</br>
+									Edad: 32
+								</p>
+							</center>
+                        </section>
+                        <section>
+                            <center>
+								<p>ADAN ADOLFO BALBIN SILVA</p>
+								<img src="images/descargar (151).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 44051463 </br>
+									Sexo: MASCULINO</br>
+									Edad: 35
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>KAROLYN YANIRE AGUILAR GERÓNIMO</p>
+								<img src="images/descargar (152).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 47960329 </br>
+									Sexo: FEMENINO</br>
+									Edad: 28
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>SABINO BARBOZA AMANTE</p>
+								<img src="images/descargar (153).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 15989326 </br>
+									Sexo: MASCULINO</br>
+									Edad: 61
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>YANELA LAURA OLORTEGUI MORALES</p>
+								<img src="images/descargar (154).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 76282519 </br>
+									Sexo: FEMENINO </br>
+									Edad: 26
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>EDWIN ALCIDES NAVARRO MATOS</p>
+								<img src="images/descargar (155).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 16019916 </br>
+									Sexo: MASCULINO </br>
+									Edad: 44
+								</p>
+							</center>
+						</section>
+                        <section>
+							<center>
+								<p>GLENIS AURORA MALDONADO FILIOS</p>
+								<img src="images/descargar (156).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 41203257 </br>
+									Sexo: FEMENINO</br>
+									Edad: 39
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>LUIS ALBERTO ALCANTARA BLAS</p>
+								<img src="images/descargar (157).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 41847218 </br>
+									Sexo: MASCULINO	</br>
+									Edad: 39
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>ISIS CHERYL ALVARADO HERRERA</p>
+								<img src="images/descargar (158).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 41384243 </br>
+									Sexo: FEMENINO</br>
+									Edad: 40
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>EDWARD JHAIR SIMON PASTRANA</p>
+								<img src="images/descargar (159).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 72723761 </br>
+									Sexo: MASCULINO </br>
+									Edad: 23
+								</p>
+							</center>
+						</section>
+						<section style="background-color: #494947"></section>
+					</div>
+					<p style="background-color: #480ca839; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS PARA EVENTUAL REEMPLAZO</p>
+					<div class="features" style="background-color:#480ca839">
+						<section>
+							<center>
+								<p>PAOLA MARTINA GOMEZ REYES</p>
+								<img src="images/descargar (160).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 76650426 </br>
+									Sexo: FEMENINO </br>
+									Edad: 26
+								</p>
+							</center>
+						</section>
+						<section>
+							<center>
+								<p>SERGIO MIGUEL CANCHA CABALLERO</p>
+								<img src="images/descargar (161).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 47194797 </br>
+									Sexo: MASCULINO</br>
+									Edad: 31
+								</p>
+							</center>
+						</section>
+                        <section>
+							<center>
+								<p>EVELYN ROCIO LLANOS CARHUAPOMA</p>
+								<img src="images/descargar (162).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 77328994 </br>
+									Sexo: FEMENINO</br>
+									Edad: 24
+								</p>
+							</center>
+						</section>
+                        <section>
+							<center>
+								<p>FABIO EULALIO JURADO BERNABEL</p>
+								<img src="images/descargar (163).jpg" width=250px height=350px alt=""><hr>
+								<p>DNI: 15998081 </br>
+									Sexo: MASCULINO</br>
+									Edad: 55
+								</p>
+							</center>
+						</section>
+					</div>
+				</div>
+            </section>
+		</div>
+
+		<!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+	</body>
+</html>

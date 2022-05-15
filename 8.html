@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Huaral Voto Informado</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script>
+
+		var ALERT_TITLE = "EL Plan De Gobierno";
+		var ALERT_BUTTON_TEXT = "Ok";
+
+		if(document.getElementById) {
+		window.alert = function(txt) {
+			createCustomAlert(txt);
+		}
+		}
+
+		function createCustomAlert(txt) {
+		d = document;
+
+		if(d.getElementById("modalContainer")) return;
+
+		mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+		mObj.id = "modalContainer";
+		mObj.style.height = d.documentElement.scrollHeight + "px";
+
+		alertObj = mObj.appendChild(d.createElement("div"));
+		alertObj.id = "alertBox";
+		if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+		alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+		alertObj.style.visiblity="visible";
+
+		h1 = alertObj.appendChild(d.createElement("h1"));
+		h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+		msg = alertObj.appendChild(d.createElement("p"));
+		//msg.appendChild(d.createTextNode(txt));
+		msg.innerHTML = txt;
+
+		btn = alertObj.appendChild(d.createElement("a"));
+		btn.id = "closeBtn";
+		btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+		btn.href = "#";
+		btn.focus();
+		btn.onclick = function() { removeCustomAlert();return false; }
+
+		alertObj.style.display = "block";
+
+		}
+
+		function removeCustomAlert() {
+		document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+		}
+		function ful(){
+		alert('NO SE ENCUENTRA, En cuanto lo publique se subira');
+		}
+	</script>
+
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar" style="background-color:#2c2c2c">
+				<div class="inner">
+					<nav style="background-color:#2c2c2c">
+						<ul>
+							<center>
+								<li><a href="index.html#intro" style="font-size: 15px;">Bienvenidos</a></li>
+								<li><a href="index.html#uno" style="font-size: 12px">Accion Popular</a></li>
+								<li><a href="index.html#dos" style="font-size: 12px">Podemos Perú</a></li>
+								<li><a href="index.html#tres" style="font-size: 12px">Fe en el Perú</a></li>
+								<li><a href="index.html#cuatro" style="font-size: 12px">Patriotico del Perú</a></li>
+								<li><a href="index.html#cinco" style="font-size: 12px">Perú Libre</a></li>
+								<li><a href="index.html#seis" style="font-size: 12px">Somos Perú</a></li>
+								<li><a href="index.html#siete" style="font-size: 12px">Movimiento Regional Unidad Civica</a></li>
+								<li><a href="index.html#ocho" style="font-size: 12px; color: #FFBE0B">Integración Social</a></li>
+								<li><a href="index.html#nueve" style="font-size: 12px">Alianza Para El Progreso</a></li>
+								<li><a href="index.html#dies" style="font-size: 12px">Juntos Por El Perú</a></li>
+								<li><a href="index.html#once" style="font-size: 12px">Concertación para el Desarrollo Regional - Lima</a></li>
+								<li><a href="index.html#doce" style="font-size: 12px">Renovación Popular</a></li>
+								<li><a href="index.html#trece" style="font-size: 12px">Democrata Verde</a></li>
+								<li><a href="index.html#catorce" style="font-size: 12px">Patria Joven</a></li>
+								<li><a href="index.html#quince" style="font-size: 12px">Fuerza Popular</a></li>
+							</center>
+                        </ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <section id="two" class="wrapper style3 fade-up" style="background-color:#494947">
+					<div class="inner" >
+						<h2 style="background-color: #4895ef; text-align: center; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px">PARTIDO DE INTEGRACION SOCIAL</h2>
+						<div class="features" style="background-color: #4895ef">
+							<section>
+								<center>
+									<h3>Tipo de Eleccion</h3>
+								</center>
+								<br>
+								<center><img src="images/2173.png" width=250px height=250px alt="">
+									<hr>
+								</center>
+								<center>
+									<p>Candidatos Obligatorios: 12</br>
+										Candidatos para reemplazo: 2
+										<hr>
+											<div class="actions">
+												<p><a href="https://www.facebook.com/lucho.napster" target=”_blank” class="button">REDES SOCIALES</a></p>
+											</div>
+											<input type="button" value = "PLAN DE GOBIERNO" onclick="alert('NO SE ENCUENTRA, En cuanto lo publique se subira');" />
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<h3>Candidato a Alcalde</h3>
+									<p>LUIS ALFONZO SARDI CORAL.</p>
+								</center>
+								<center><img src="images/descargar (107).jpg" width=250px height=350px alt="">
+								<hr>
+								<p>ACTUALMENTE: Director Pollería Que Tal Pollo y director comercial en prodigio Perú</p><hr>
+								<p>INGENIERO AGRONOMO</p>
+								<hr>
+								</center>
+								<center>
+									<p> DNI: 16017460 </br>
+										Sexo: MASCULINO </br>
+										Edad: 58 </br>
+									</p>
+								</center>
+							</section>
+						</div>
+                        <p style="background-color: #4896efa6; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS A REGIDORES.</p>
+                        <div class="features" style="background-color: #4896efa6">
+                            <section>
+                                <center>
+									<p>JESUS MAURICIO JIMENO YOVERA</p>
+									<img src="images/descargar (108).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 40369816 </br>
+										Sexo: MASCULINO</br>
+										Edad: 42
+									</p>
+								</center>
+                            </section>
+                            <section>
+                                <center>
+									<p>NELIDA MARGARITA ROSARIO CEFERINO</p>
+									<img src="images/descargar (109).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 15992722 </br>
+										Sexo: FEMENINO</br>
+										Edad: 46
+									</p>
+								</center>
+                            </section>
+                            <section>
+                                <center>
+									<p>ENRIQUE ANTONIO ALBERCA LOJAS</p>
+									<img src="images/descargar (110).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 02606739 </br>
+										Sexo: MASCULINO</br>
+										Edad: 59
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>ROSA AMELIA MENDEZ DE PAUCAR</p>
+									<img src="images/descargar (111).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 15961724 </br>
+										Sexo: FEMENINO</br>
+										Edad: 61
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>CESAR RUBEN MORAN GUARDAMINO</p>
+									<img src="images/descargar (112).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 09886230 </br>
+										Sexo: MASCULINO</br>
+										Edad: 56
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>AURORA JOSELYN GRAS CASTILLO</p>
+									<img src="images/descargar (113).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 76553135 </br>
+										Sexo: FEMENINO</br>
+										Edad: 26
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JULIO SEFERINO CALDERON ANTEZANA</p>
+									<img src="images/descargar (114).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 15751891 </br>
+										Sexo: MASCULINO</br>
+										Edad: 47
+									</p>
+								</center>
+							</section>
+                            <section>
+								<center>
+									<p>SILVIA ROXANA MARGARITO GUADALUPE</p>
+									<img src="images/descargar (115).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 15751676 </br>
+										Sexo: FEMENINO</br>
+										Edad: 47
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JOSE MIGUEL ESCOBEDO MONTALGO</p>
+									<img src="images/descargar (116).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 48100052 </br>
+										Sexo: MASCULINO	</br>
+										Edad: 28
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>DEYRI LETICIA SAAVEDRA CANTO</p>
+									<img src="images/descargar (117).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 76785386 </br>
+										Sexo: FEMENINO</br>
+										Edad: 26
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JORGE ANTONIO GONZALES PIZARRO</p>
+									<img src="images/descargar (118).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 16004058 </br>
+										Sexo: MASCULINO</br>
+										Edad: 51
+									</p>
+								</center>
+							</section>
+							<section style="background-color: #494947"></section>
+						</div>
+						<center>
+							<p style="background-color: #4896ef5b; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS PARA EVENTUAL REEMPLAZO</p>
+						</center>
+						<div class="features" style="background-color: #4896ef5b">
+							<section>
+								<center>
+									<p>ZAIDA JANETH PILCO LOPEZ</p>
+									<img src="images/descargar (119).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 05404258 </br>
+										Sexo: MASCULINO</br>
+										Edad: 45
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>JONATHAN SAMUEL ROMAN ALVAREZ</p>
+									<img src="images/descargar (120).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 72362329 </br>
+										Sexo: MASCULINO</br>
+										Edad: 29
+									</p>
+								</center>
+							</section>
+						</div>
+					</div>
+                </section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Huaral Voto Informado</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script>
+
+		var ALERT_TITLE = "EL Plan De Gobierno";
+		var ALERT_BUTTON_TEXT = "Ok";
+
+		if(document.getElementById) {
+		window.alert = function(txt) {
+			createCustomAlert(txt);
+		}
+		}
+
+		function createCustomAlert(txt) {
+		d = document;
+
+		if(d.getElementById("modalContainer")) return;
+
+		mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+		mObj.id = "modalContainer";
+		mObj.style.height = d.documentElement.scrollHeight + "px";
+
+		alertObj = mObj.appendChild(d.createElement("div"));
+		alertObj.id = "alertBox";
+		if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+		alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+		alertObj.style.visiblity="visible";
+
+		h1 = alertObj.appendChild(d.createElement("h1"));
+		h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+		msg = alertObj.appendChild(d.createElement("p"));
+		//msg.appendChild(d.createTextNode(txt));
+		msg.innerHTML = txt;
+
+		btn = alertObj.appendChild(d.createElement("a"));
+		btn.id = "closeBtn";
+		btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+		btn.href = "#";
+		btn.focus();
+		btn.onclick = function() { removeCustomAlert();return false; }
+
+		alertObj.style.display = "block";
+
+		}
+
+		function removeCustomAlert() {
+		document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+		}
+		function ful(){
+		alert('NO SE ENCUENTRA, En cuanto lo publique se subira');
+		}
+	</script>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar" style="background-color:#2c2c2c">
+				<div class="inner">
+					<nav style="background-color:#2c2c2c">
+						<ul>
+							<center>
+								<li><a href="index.html#intro" style="font-size: 15px;">Bienvenidos</a></li>
+								<li><a href="index.html#uno" style="font-size: 12px">Accion Popular</a></li>
+								<li><a href="index.html#dos" style="font-size: 12px">Podemos Perú</a></li>
+								<li><a href="index.html#tres" style="font-size: 12px">Fe en el Perú</a></li>
+								<li><a href="index.html#cuatro" style="font-size: 12px">Patriotico del Perú</a></li>
+								<li><a href="index.html#cinco" style="font-size: 12px; color: #FFBE0B">Perú Libre</a></li>
+								<li><a href="index.html#seis" style="font-size: 12px">Somos Perú</a></li>
+								<li><a href="index.html#siete" style="font-size: 12px">Movimiento Regional Unidad Civica</a></li>
+								<li><a href="index.html#ocho" style="font-size: 12px">Integración Social</a></li>
+								<li><a href="index.html#nueve" style="font-size: 12px">Alianza Para El Progreso</a></li>
+								<li><a href="index.html#dies" style="font-size: 12px">Juntos Por El Perú</a></li>
+								<li><a href="index.html#once" style="font-size: 12px">Concertación para el Desarrollo Regional - Lima</a></li>
+								<li><a href="index.html#doce" style="font-size: 12px">Renovación Popular</a></li>
+								<li><a href="index.html#trece" style="font-size: 12px">Democrata Verde</a></li>
+								<li><a href="index.html#catorce" style="font-size: 12px">Patria Joven</a></li>
+								<li><a href="index.html#quince" style="font-size: 12px">Fuerza Popular</a></li>
+							</center>
+                        </ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <section id="two" class="wrapper style3 fade-up" style="background-color:#494947">
+					<div class="inner">
+						<h2 style="background-color: #f78000; text-align: center; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px">PARTIDO POLITICO NACIONAL PERÚ LIBRE</h2>
+						<div class="features" style="background-color: #f78000">
+							<section>
+								<center>
+									<h3>Tipo de Eleccion</h3>
+								</center><br>
+								<center><img src="images/2218.png" width=250px height=250px alt="">
+									<hr>
+								</center>
+								<center>
+									<p>Candidatos Obligatorios: 12</br>
+										Candidatos para reemplazo: 3
+										<hr>
+											<div class="actions">
+												<p><a href="https://www.facebook.com/profile.php?id=100077252374481" target=”_blank” class="button">REDES SOCIALES</a></p>
+											</div>
+											<input type="button" value = "PLAN DE GOBIERNO" onclick="alert('NO SE ENCUENTRA, En cuanto lo publique se subira');" />
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<h3>Candidato a Alcalde</h3>
+									<p>HERMES RODRIGUEZ VALLADARES.</p>
+								</center>
+								<center><img src="images/descargar (60).jpg" width=250px height=350px alt="">
+									<hr>
+								</center>
+								<center>
+									<p>CAMPESINO</p><hr>
+									<p>ACTUALMENTE Presidente de los Productores de Maíz y Sorgo del Perú</p><hr>
+									<p> DNI: 15954638 </br>
+										Edad: 74
+									</p>
+								</center>
+							</section>
+						</div>
+                        <p style="background-color: #f78000c7; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS A REGIDORES.</p>
+                        <div class="features" style="background-color: #f78000c7">
+                            <section>
+                                <center>
+									<p>ROCIO KATERINNE CARMELO QUILLAY</p>
+									<img src="images/descargar (61).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 43511249</br>
+										Sexo: FEMENINO</br>
+										Edad: 36
+									</p>
+								</center>
+                            </section>
+                            <section>
+                                <center>
+									<p>EDGAR ENRIQUE VASQUEZ TORRES</p>
+									<img src="images/descargar (62).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 44477850</br>
+										Sexo: MASCULINO</br>
+										Edad: 34
+									</p>
+								</center>
+                            </section>
+                                <section>
+                                <center>
+									<p>EUSEBIA ANGELI YUFRA HERRERA</p>
+									<img src="images/descargar (63).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 09950743</br>
+										Sexo: FEMENINO</br>
+										Edad: 47
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>FRANK CARBAJAL LIVIA</p>
+									<img src="images/descargar (64).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 47011005</br>
+										Sexo: MASCULINO</br>
+										Edad: 31
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>ESPERANZA DE ORNELLA PAEZ VILCA</p>
+									<img src="images/descargar (65).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 44764885</br>
+										Sexo: FEMENINO</br>
+										Edad: 36
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>RONALD FREDI GUARDAMINO RIQUEZ</p>
+									<img src="images/descargar (66).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 09458669</br>
+										Sexo: MASCULINO</br>
+										Edad: 62
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>ELINIS SUSANA DOMINGUEZ ROJAS</p>
+									<img src="images/descargar (67).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 76727417</br>
+										Sexo: FEMENINO</br>
+										Edad: 22
+									</p>
+								</center>
+							</section>
+                            <section>
+								<center>
+									<p>ANTHONY FARID VILCHEZ SANTOS</p>
+									<img src="images/descargar (68).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 77392724</br>
+										Sexo: MASCULINO</br>
+										Edad: 23
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>FIDEDIGNA DE LA CRUZ GOMEZ</p>
+									<img src="images/descargar (69).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 45409601</br>
+										Sexo: FEMENINO</br>
+										Edad: 33
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>FIDENCIO EDMUNDO CARRASCO ROJAS</p>
+									<img src="images/descargar (70).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 06544575</br>
+										Sexo: MASCULINO</br>
+										Edad: 72
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>ROUSE ANGIE RAMIREZ GUERRA</p>
+									<img src="images/descargar (71).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 75949982</br>
+										Sexo: FEMENINO</br>
+										Edad: 19
+									</p>
+								</center>
+							</section>
+							<section style="background-color: #494947"></section>
+						</div>
+						<p style="background-color: #f780005f; padding: 10px 10px 20px 10px; margin: 0px 0px 10px 0px; font-size:20px; color: white; font-weight:bold">CANDIDATOS PARA EVENTUAL REEMPLAZO</p>
+						<div class="features" style="background-color: #f780005f">
+							<section>
+								<center>
+									<p>ARGENIS CHRISTIAN LEON GAMARRA</p>
+									<img src="images/descargar (72).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 47803809</br>
+										Sexo: MASCULINO</br>
+										Edad: 30
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>GINA MARGOT DELGADILLO FIGUEROA</p>
+									<img src="images/descargar (73).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 16022854</br>
+										Sexo: FEMENINO</br>
+										Edad: 44
+									</p>
+								</center>
+							</section>
+							<section>
+								<center>
+									<p>RAUL FILIBERTO PAZ DEGOLLAR</p>
+									<img src="images/descargar (74).jpg" width=250px height=350px alt=""><hr>
+									<p>DNI: 09904538</br>
+										Sexo: MASCULINO</br>
+										Edad: 47
+									</p>
+								</center>
+							</section>
+							<section style="background-color: #494947"></section>
+						</div>
+					</div>
+                </section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
